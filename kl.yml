@@ -1,0 +1,16 @@
+version: v1
+defaultEnv: mohit-env
+packages:
+- neovim
+- git
+- nodejs
+envVars:
+- key: MONGO_URI
+  mresRef: mongo/URI
+- key: PORT
+  value: 4000
+- key: NEXT_PUBLIC_API_URL
+  value: http://localhost:4000
+mounts: []
+ports: []
+accountName: development-team
